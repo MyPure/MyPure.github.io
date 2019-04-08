@@ -88,7 +88,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/09/Hi/" data-id="cju8lta6f0001aowkeq802xwp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/04/09/Hi/" data-id="cju8mo6zi0001d4wkd4q5rj02" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/你好/">你好</a></li></ul>
@@ -131,29 +131,29 @@
 <li>IEnumerable——可以迭代（遍历）集合中的项（元素）。</li>
 <li>ICollection——继承于IEnumerable。可以获取集合中项的个数，并能把项复制到一个简单的数组类型中。</li>
 <li>IList——继承于ICollection和IEnumerable。提供了集合的项列表，允许访问这些项，并提供其他一些与项列表相关的基本功能。</li>
-<li>ICloneable——克隆的支持，将创建的类的新实例得到与现有实例相同的值。<br>##ArrayList的使用<br><strong>注意：ArrayList里的元素都是System.Object类型的。</strong></li>
+<li>ICloneable——克隆的支持，将创建的类的新实例得到与现有实例相同的值。<h2 id="ArrayList的使用"><a href="#ArrayList的使用" class="headerlink" title="ArrayList的使用"></a>ArrayList的使用</h2><strong>注意：ArrayList里的元素都是System.Object类型的。</strong></li>
 </ul>
 <p>ArrayList类实现了上述接口，但实现方式比System.Array类更复杂。这个类可用于表示可变大小的数组（或者称为集合）。接下来将简单介绍使用方法。<br><strong>使用ArrayList前，需要添加System.Collections名称空间。</strong><br><code>using System.Collections;</code></p>
-<p>#####创建一个ArrayList<br>ArrayList的构造函数有三个重载，下面逐一说明。<br>默认的构造函数是这样的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ArrayList arrayListTest = new ArrayList();</span><br></pre></td></tr></table></figure></p>
+<h5 id="创建一个ArrayList"><a href="#创建一个ArrayList" class="headerlink" title="创建一个ArrayList"></a>创建一个ArrayList</h5><p>ArrayList的构造函数有三个重载，下面逐一说明。<br>默认的构造函数是这样的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ArrayList arrayListTest = new ArrayList();</span><br></pre></td></tr></table></figure></p>
 <p>可以发现，ArrayList不像普通数组那样需要指定数组的大小。<br>第二个构造函数：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ArrayList arrayListTest = new ArrayList(5);</span><br><span class="line">//这样创建的ArrayList默认有五个元素的容量，但这并不是绝对容量。</span><br></pre></td></tr></table></figure></p>
 <p>第三个构造函数是这样的：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public ArrayList(ICollection c);</span><br><span class="line">//初始化 System.Collections.ArrayList 类的新实例，该类包含从指定集合复制的元素，并具有与复制的元素数相同的初始容量。</span><br><span class="line">//参数c:其元素已复制到新列表的 System.Collections.ICollection。</span><br></pre></td></tr></table></figure></p>
 <p>可以看到c是一个ICollection类型的变量。也就是说，使用了ICollection接口的类的实例都可以当做参数c（没错，普通数组Array也可以，因为Array也使用了ICollection接口）。</p>
 <p>所以我们可以这么用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ArrayList arrayListTest2 = new ArrayList(arrayListTest);</span><br><span class="line">//这样创建直接复制了arrayListTest集合</span><br></pre></td></tr></table></figure></p>
 <p>还可以这么用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int[] intTest = new int[5] &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line">ArrayList arrayListTest2 = new ArrayList(intTest);</span><br></pre></td></tr></table></figure></p>
-<p>#####给ArrayList添加元素<br>不像普通数组定义出来后就有了大小，ArrayList刚创建时是空的（一个元素都没有，除非你不是用的默认构造函数）。那么我们就需要给ArrayList添加元素了。添加元素需要使用ArrayList里的一个方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">public virtual int Add(object value);</span><br><span class="line">//将value对象添加到ArrayList的结尾处。返回值为添加到ArrayList里的value的索引。</span><br></pre></td></tr></table></figure></p>
+<h5 id="给ArrayList添加元素"><a href="#给ArrayList添加元素" class="headerlink" title="给ArrayList添加元素"></a>给ArrayList添加元素</h5><p>不像普通数组定义出来后就有了大小，ArrayList刚创建时是空的（一个元素都没有，除非你不是用的默认构造函数）。那么我们就需要给ArrayList添加元素了。添加元素需要使用ArrayList里的一个方法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">public virtual int Add(object value);</span><br><span class="line">//将value对象添加到ArrayList的结尾处。返回值为添加到ArrayList里的value的索引。</span><br></pre></td></tr></table></figure></p>
 <p>使用示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ClassTest classTestObject = new ClassTest();</span><br><span class="line">arrayListTest.Add(classTestObject);</span><br><span class="line">或者把以上两行代码二合一：</span><br><span class="line">arrayListTest.Add(new ClassTest());</span><br></pre></td></tr></table></figure></p>
 <p>Add()方法只能在末尾添加一个元素。因此可以使用另一个方法一次性添加多个元素：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">public virtual void AddRange(ICollection c);</span><br><span class="line">//将 ICollection 的元素添加到 System.Collections.ArrayList 的末尾。</span><br></pre></td></tr></table></figure></p>
 <p>ICollection接口已在上文介绍，这里不再赘述。<br>给ArrayList添加元素后，ArrayList的长度（容量）就会自动增加。但是和Array不一样的是，读取ArrayList的长度需要使用ArrayList的Count属性。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Console.WriteLine(arrayListTest.Count);</span><br><span class="line">//将 System.Collections.ICollection 的元素添加到 System.Collections.ArrayList 的末尾。</span><br></pre></td></tr></table></figure></p>
-<p>#####使用ArrayList中的元素<br>添加完元素后，就可以使用里面的元素了。ArrayList可以像Array一样直接用下标索引使用元素。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ClassTest classTestObject2 = new ClassTest();</span><br><span class="line">arrayListTest[1] = classTestObject2;</span><br></pre></td></tr></table></figure></p>
+<h5 id="使用ArrayList中的元素"><a href="#使用ArrayList中的元素" class="headerlink" title="使用ArrayList中的元素"></a>使用ArrayList中的元素</h5><p>添加完元素后，就可以使用里面的元素了。ArrayList可以像Array一样直接用下标索引使用元素。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ClassTest classTestObject2 = new ClassTest();</span><br><span class="line">arrayListTest[1] = classTestObject2;</span><br></pre></td></tr></table></figure></p>
 <p>当然，索引ArrayList的下标也不能越界。<br>在使用ArrayList里的对象时，要注意：ArrayList集合是System.Object对象的集合，因此在使用对象成员时需要进行类型转换：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">((ClassTest)arrayListTest[0]).FunctionTest();</span><br><span class="line">//FunctionTest()方法定义在ClassTest中。</span><br></pre></td></tr></table></figure></p>
-<p>#####删除ArrayList中的元素<br>使用如下方法可以删除ArrayList中的特定索引值的元素：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arrayListTest.RemoveAt(0);</span><br><span class="line">//将删除下标为0的元素</span><br></pre></td></tr></table></figure></p>
+<h5 id="删除ArrayList中的元素"><a href="#删除ArrayList中的元素" class="headerlink" title="删除ArrayList中的元素"></a>删除ArrayList中的元素</h5><p>使用如下方法可以删除ArrayList中的特定索引值的元素：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arrayListTest.RemoveAt(0);</span><br><span class="line">//将删除下标为0的元素</span><br></pre></td></tr></table></figure></p>
 <p>还可以使用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arrayListTest.Remove(classTestObject);</span><br><span class="line">//删除arrayTest中的classTestObject对象</span><br></pre></td></tr></table></figure></p>
 <p>删除某些元素后，这些元素后面的元素会自动前移。所以务必注意越界问题。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/09/ArrayList-Sketch/" data-id="cju8lta5t0000aowkgk4hrir3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/04/09/ArrayList-Sketch/" data-id="cju8mo6z20000d4wk8ihdtczs" class="article-share-link">Share</a>
       
       
     </footer>
@@ -198,7 +198,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/04/08/hello-world/" data-id="cju8lta6l0002aowk9x8jjvpa" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/04/08/hello-world/" data-id="cju8mo6zn0002d4wkw27m364n" class="article-share-link">Share</a>
       
       
     </footer>
