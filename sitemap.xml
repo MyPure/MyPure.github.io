@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/04/09/Compare/</loc>
+    
+    <lastmod>2019-04-09T09:36:57.253Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/04/09/ArrayList-Sketch/</loc>
+    
+    <lastmod>2019-04-09T08:48:17.145Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/testpage/index.html</loc>
+    
+    <lastmod>2019-04-09T08:36:27.558Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/04/08/hello-world/</loc>
     
     <lastmod>2019-04-09T03:45:51.825Z</lastmod>
@@ -19,13 +40,6 @@
     <loc>http://yoursite.com/2019/04/09/Hi/</loc>
     
     <lastmod>2019-04-09T03:45:51.794Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/04/09/ArrayList-Sketch/</loc>
-    
-    <lastmod>2019-04-09T03:45:51.762Z</lastmod>
     
   </url>
   
