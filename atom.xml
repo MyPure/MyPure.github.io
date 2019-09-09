@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-09T11:26:34.776Z</updated>
+  <updated>2019-09-09T11:29:23.986Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/09/09/Unity-Plug-ins/"/>
     <id>http://yoursite.com/2019/09/09/Unity-Plug-ins/</id>
     <published>2019-09-09T11:22:58.000Z</published>
-    <updated>2019-09-09T11:26:34.776Z</updated>
+    <updated>2019-09-09T11:29:23.986Z</updated>
     
     <content type="html"><![CDATA[<p>Behavior Designer 用于写AI<br>DoTween 用于补间  </p>]]></content>
     
@@ -35,6 +35,8 @@
     
     </summary>
     
+    
+      <category term="Unity" scheme="http://yoursite.com/tags/Unity/"/>
     
   </entry>
   
