@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
+
 <head><meta name="generator" content="Hexo 3.8.0">
     <!--Setting-->
     <meta charset="UTF-8">
@@ -13,64 +14,58 @@
     <meta name="format-detection" content="telephone=no,email=no,adress=no">
     <meta name="browsermode" content="application">
     <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
     <link rel="dns-prefetch" href="http://yoursite.com">
     <!--SEO-->
 
-    <meta name="keywords" content="C#">
+<meta name="keywords" content="C#">
 
 
-    <meta name="description" content="字符串函数：ToUpper();  
+<meta name="description" content="字符串函数：ToUpper();  
 ToLower();  
 Equals();比较//string变量1.Equals(string变量2);  
 Split();分割  
 Substrin...">
 
 
-
 <meta name="robots" content="all">
 <meta name="google" content="all">
 <meta name="googlebot" content="all">
 <meta name="verify" content="all">
-
     <!--Title-->
 
+<title>
+    
+    C#笔记 |
+    
+    MyPure&#39;s Blog Station
+</title>
 
-<title>C#笔记 | MyPure&#39;s Blog Station</title>
+<link rel="alternate" href="/atom.xml" title="MyPure&#39;s Blog Station" type="application/atom+xml">
 
 
-    <link rel="alternate" href="/atom.xml" title="MyPure&#39;s Blog Station" type="application/atom+xml">
-
-
-    <link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/favicon.ico">
 
     
-
-
 
 <link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
-<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.5.0">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0">
 <link rel="stylesheet" href="/css/style.css?rev=@@hash">
-
-
-
-
     
-	<div class="hide">
-		<script type="text/javascript">
-			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
-		</script>
-	</div>
-
-
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
 
 
 
 
     
 
-</head>
-
-</html>
+</head></html>
 <!--[if lte IE 8]>
 <style>
     html{ font-size: 1em }
@@ -79,19 +74,21 @@ Substrin...">
 <!--[if lte IE 9]>
 <div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
 <![endif]-->
-
 <body>
-    <header class="main-header" style="background-image:url(/img/banner.jpg)">
+    <header class="main-header" style="background-image:url(
+    /img/banner.jpg)">
     <div class="main-header-box">
         <a class="header-avatar" href="/" title="My_Pure">
             <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
         </a>
         <div class="branding">
-        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
             
-                <h2> sqrt(-1) love you! </h2>
+            <h2>
+                sqrt(-1) love you!
+            </h2>
             
-    	</div>
+        </div>
     </div>
 </header>
     <nav class="main-navigation">
@@ -99,29 +96,34 @@ Substrin...">
         <div class="row">
             <div class="col-sm-12">
                 <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
-                    <span class="sr-only"></span>
+                        <span class="sr-only"></span>
                         <i class="fa fa-bars"></i>
                     </span>
-                    <a class="navbar-brand" href="http://yoursite.com">MyPure&#39;s Blog Station</a>
+                    <a class="navbar-brand" href="http://yoursite.com">
+                        MyPure&#39;s Blog Station</a>
                 </div>
                 <div class="collapse navbar-collapse" id="main-menu">
                     <ul class="menu">
                         
-                            <li role="presentation" class="text-center">
-                                <a href="/"><i class="fa "></i>首页</a>
-                            </li>
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                首页</a>
+                        </li>
                         
-                            <li role="presentation" class="text-center">
-                                <a href="/archives/"><i class="fa "></i>时间轴</a>
-                            </li>
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
                         
-                            <li role="presentation" class="text-center">
-                                <a href="/categories/CSharp/"><i class="fa "></i>C#</a>
-                            </li>
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/CSharp/"><i class="fa "></i>
+                                C#</a>
+                        </li>
                         
-                            <li role="presentation" class="text-center">
-                                <a href="/categories/Unity/"><i class="fa "></i>Unity</a>
-                            </li>
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/Unity/"><i class="fa "></i>
+                                Unity</a>
+                        </li>
                         
                     </ul>
                 </div>
@@ -138,39 +140,38 @@ Substrin...">
     <div class="post-head">
         <h1 id="C#笔记">
             
-	            C#笔记
+            C#笔记
             
         </h1>
         <div class="post-meta">
     
-        <span class="categories-meta fa-wrap">
-            <i class="fa fa-folder-open-o"></i>
-            <a class="category-link" href="/categories/CSharp/">CSharp</a>
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a class="category-link" href="/categories/CSharp/">CSharp</a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            <a class="tag-link" href="/tags/C/">C#</a>
+            
         </span>
+    </span>
     
-
     
-        <span class="fa-wrap">
-            <i class="fa fa-tags"></i>
-            <span class="tags-meta">
-                
-                    <a class="tag-link" href="/tags/C/">C#</a>
-                
-            </span>
-        </span>
     
-
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2019/05/06</span>
+    </span>
     
-        
-        <span class="fa-wrap">
-            <i class="fa fa-clock-o"></i>
-            <span class="date-meta">2019/05/06</span>
-        </span>
-        
     
 </div>
-            
-            
+        
+        
     </div>
     
     <div class="post-body post-content">
@@ -344,44 +345,61 @@ public static 类名 方法名(){
         </div>
     </div>
 </article>
-
 <div class="article-nav prev-next-wrap clearfix">
     
-        <a href="/2019/09/09/Unity-Plug-ins/" class="pre-post btn btn-default" title="Unity_Plug-ins">
-            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-            <span class="hidden-xs">Unity_Plug-ins</span>
-        </a>
+    <a href="/2019/09/09/Unity-Plug-ins/" class="pre-post btn btn-default" title="Unity_Plug-ins">
+        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+        <span class="hidden-xs">
+            Unity_Plug-ins</span>
+    </a>
     
     
-        <a href="/2019/04/12/zhuzhu/" class="next-post btn btn-default" title="Hi">
-            <span class="hidden-lg">下一篇</span>
-            <span class="hidden-xs">Hi</span><i class="fa fa-angle-right fa-fw"></i>
-        </a>
+    <a href="/2019/04/12/zhuzhu/" class="next-post btn btn-default" title="Hi">
+        <span class="hidden-lg">下一篇</span>
+        <span class="hidden-xs">
+            Hi</span><i class="fa fa-angle-right fa-fw"></i>
+    </a>
     
 </div>
 
+<div id="comments">
+    
 
-    <div id="comments">
-        
-   <p>评论系统未开启，无法评论！</p>
+<div id="vcomments" class="valine"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+<script>
+new Valine({
+    av: AV,
+    el: '#vcomments',
+    appId: 'xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz',
+    appKey: 'erIpQac4azoCmgfBB7Dl9maa',
+    placeholder: '说点什么吧',
+    notify: false,
+    verify: true,
+    avatar: 'mm',
+    meta: 'nick,mail'.split(','),
+    pageSize: '10',
+    path: window.location.pathname,
+    lang: 'zh-CN'.toLowerCase()
+})
+</script>
 
-    </div>
 
-
-
-
+</div>
 
                 </main>
                 
                     <aside id="article-toc" role="navigation" class="col-md-4">
     <div class="widget">
-        <h3 class="title">文章目录</h3>
+        <h3 class="title">
+            文章目录
+        </h3>
         
-            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#字符串函数："><span class="toc-text">字符串函数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ArrayList类：using-System-Collections"><span class="toc-text">ArrayList类：using System.Collections;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#is和as"><span class="toc-text">is和as</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#类"><span class="toc-text">类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#类的继承"><span class="toc-text">类的继承</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#接口"><span class="toc-text">接口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#object类"><span class="toc-text">object类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#对象：由类实例化出来的具体事物"><span class="toc-text">对象：由类实例化出来的具体事物</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#访问"><span class="toc-text">访问</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#静态（static）"><span class="toc-text">静态（static）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#运算符重载：可以直接对对象使用运算符"><span class="toc-text">运算符重载：可以直接对对象使用运算符</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#单例设计模式"><span class="toc-text">单例设计模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象原则"><span class="toc-text">面向对象原则</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#里式转换原则"><span class="toc-text">里式转换原则</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#字符串函数："><span class="toc-text">字符串函数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ArrayList类：using-System-Collections"><span class="toc-text">ArrayList类：using System.Collections;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#is和as"><span class="toc-text">is和as</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#类"><span class="toc-text">类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#类的继承"><span class="toc-text">类的继承</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#接口"><span class="toc-text">接口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#object类"><span class="toc-text">object类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#对象：由类实例化出来的具体事物"><span class="toc-text">对象：由类实例化出来的具体事物</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#访问"><span class="toc-text">访问</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#静态（static）"><span class="toc-text">静态（static）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#运算符重载：可以直接对对象使用运算符"><span class="toc-text">运算符重载：可以直接对对象使用运算符</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#单例设计模式"><span class="toc-text">单例设计模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#面向对象原则"><span class="toc-text">面向对象原则</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#里式转换原则"><span class="toc-text">里式转换原则</span></a></li></ol></li></ol>
         
     </div>
 </aside>
-
                 
             </div>
         </div>
@@ -392,14 +410,9 @@ public static 类名 方法名(){
         </div>
     </div>
 </footer>
-
 <a id="back-to-top" class="icon-btn hide">
-	<i class="fa fa-chevron-up"></i>
+    <i class="fa fa-chevron-up"></i>
 </a>
-
-
-
-
     <div class="copyright">
     <div class="container">
         <div class="row">
@@ -407,10 +420,11 @@ public static 类名 方法名(){
                 <div class="busuanzi">
     
 </div>
-
             </div>
             <div class="col-sm-12">
-                <span>Copyright &copy; 2019
+                <span>Copyright &copy;
+                    2019
+                    
                 </span> |
                 <span>
                     Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
@@ -425,11 +439,6 @@ public static 类名 方法名(){
 
 
 
-
-
-
-
 <script src="/js/app.js?rev=@@hash"></script>
-
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});</script></body>
 </html>

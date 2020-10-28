@@ -51,12 +51,12 @@
         return regExp.test(raw);
     }
 
-    function searchShow(){
+    function searchShow() {
         removeClass(searchWrap, 'hide');
         removeClass(searchMask, 'hide');
     }
 
-    function searchHide(){
+    function searchHide() {
         addClass(searchWrap, 'hide');
         addClass(searchMask, 'hide');
     }
@@ -64,7 +64,7 @@
     function loadData(success) {
         if (!searchData) {
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', location.href + 'content.json', true);
+            xhr.open('GET', document.getElementsByTagName('meta')['root'].content + 'content.json', true);
             xhr.onload = function() {
                 if (this.status >= 200 && this.status < 300) {
                     var res = JSON.parse(this.response || this.responseText);
@@ -94,7 +94,7 @@
                 });
             }).join('');
         } else {
-            if(searchWord.value == ''){
+            if (searchWord.value == '') {
                 searchHide();
             } else {
                 html = '<div class="tips"><p>没有找到相关结果!</p></div>';
