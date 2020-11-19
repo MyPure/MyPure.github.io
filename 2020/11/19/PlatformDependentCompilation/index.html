@@ -1,0 +1,401 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="MyPure&#39;s Blog Station">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="theme-version" content="1.2.3">
+    <meta name="root" content="/">
+    <link rel="dns-prefetch" href="http://yoursite.com">
+    <!--SEO-->
+
+<meta name="keywords" content="Unity">
+
+
+<meta name="description" content="Unity常用多平台宏定义
+
+
+Define
+Function
+
+
+
+
+UNITY_EDITOR
+#define directive to call Unity Editor scripts f...">
+
+
+<meta name="robots" content="all">
+<meta name="google" content="all">
+<meta name="googlebot" content="all">
+<meta name="verify" content="all">
+    <!--Title-->
+
+<title>
+    
+    Untiy 多平台宏定义 |
+    
+    MyPure&#39;s Blog Station
+</title>
+
+<link rel="alternate" href="/atom.xml" title="MyPure&#39;s Blog Station" type="application/atom+xml">
+
+
+<link rel="icon" href="/favicon.ico">
+
+    
+
+<link rel="stylesheet" href="/css/bootstrap.min.css?rev=3.3.7">
+<link rel="stylesheet" href="/css/font-awesome.min.css?rev=4.7.0">
+<link rel="stylesheet" href="/css/style.css?rev=@@hash">
+    
+<div class="hide">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+
+
+
+
+    
+
+</head></html>
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+<body>
+    <header class="main-header" style="background-image:url(
+    /img/banner.jpg)">
+    <div class="main-header-box">
+        <a class="header-avatar" href="/" title="My_Pure">
+            <img src="/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+            <!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+            <h2>
+                sqrt(-1) love you!
+            </h2>
+            
+        </div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="http://yoursite.com">
+                        MyPure&#39;s Blog Station</a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/"><i class="fa "></i>
+                                首页</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/archives/"><i class="fa "></i>
+                                时间轴</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/CSharp/"><i class="fa "></i>
+                                C#</a>
+                        </li>
+                        
+                        <li role="presentation" class="text-center">
+                            <a href="/categories/Unity/"><i class="fa "></i>
+                                Unity</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="Untiy 多平台宏定义">
+            
+            Untiy 多平台宏定义
+            
+        </h1>
+        <div class="post-meta">
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a class="category-link" href="/categories/Unity/">Unity</a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+            <a class="tag-link" href="/tags/Unity/">Unity</a>
+            
+        </span>
+    </span>
+    
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-clock-o"></i>
+        <span class="date-meta">
+            2020/11/19</span>
+    </span>
+    
+    
+</div>
+        
+        
+    </div>
+    
+    <div class="post-body post-content">
+        <h1 id="Unity常用多平台宏定义"><a href="#Unity常用多平台宏定义" class="headerlink" title="Unity常用多平台宏定义"></a>Unity常用多平台宏定义</h1><table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>Define</strong></th>
+<th style="text-align:left"><strong>Function</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>UNITY_EDITOR</strong></td>
+<td style="text-align:left">#define directive to call Unity Editor scripts from your game code.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_EDITOR_WIN</strong></td>
+<td style="text-align:left">#define directive for Editor code on Windows.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_EDITOR_OSX</strong></td>
+<td style="text-align:left">#define directive for Editor code on Mac OS X.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_EDITOR_LINUX</strong></td>
+<td style="text-align:left">#define directive for Editor code on Linux.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_STANDALONE_OSX</strong></td>
+<td style="text-align:left">#define directive to compile or execute code specifically for Mac OS X (including Universal, PPC and Intel architectures).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_STANDALONE_WIN</strong></td>
+<td style="text-align:left">#define directive for compiling/executing code specifically for Windows standalone applications.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_STANDALONE_LINUX</strong></td>
+<td style="text-align:left">#define directive for compiling/executing code specifically for Linux standalone applications.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_STANDALONE</strong></td>
+<td style="text-align:left">#define directive for compiling/executing code for any standalone platform (Mac OS X, Windows or Linux).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_WII</strong></td>
+<td style="text-align:left">#define directive for compiling/executing code for the Wii console.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_IOS</strong></td>
+<td style="text-align:left">#define directive for compiling/executing code for the iOS platform.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_ANDROID</strong></td>
+<td style="text-align:left">#define directive for the Android platform.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_PS4</strong></td>
+<td style="text-align:left">#define directive for running <strong>PlayStation 4</strong>  code.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_XBOXONE</strong></td>
+<td style="text-align:left">#define directive for executing <strong>Xbox One</strong>  code.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_LUMIN</strong></td>
+<td style="text-align:left">#define directive for the Magic Leap OS platform. You can also use <strong>PLATFORM_LUMIN</strong>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_TIZEN</strong></td>
+<td style="text-align:left">#define directive for the Tizen platform.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_TVOS</strong></td>
+<td style="text-align:left">#define directive for the Apple TV platform.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_WSA</strong></td>
+<td style="text-align:left">#define directive for <strong>Universal Windows Platform</strong> . Additionally, <strong>NETFX_CORE</strong> is defined when compiling C# files against .NET Core and using .NET <strong>scripting backend</strong> .</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_WSA_10_0</strong></td>
+<td style="text-align:left">#define directive for Universal Windows Platform. Additionally <strong>WINDOWS_UWP</strong> is defined when compiling C# files against .NET Core.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_WINRT</strong></td>
+<td style="text-align:left">Same as <strong>UNITY_WSA</strong>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_WINRT_10_0</strong></td>
+<td style="text-align:left">Equivalent to <strong>UNITY_WSA_10_0</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_WEBGL</strong></td>
+<td style="text-align:left">#define directive for <strong>WebGL</strong> .</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_FACEBOOK</strong></td>
+<td style="text-align:left">#define directive for the Facebook platform (WebGL or Windows standalone).</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_ANALYTICS</strong></td>
+<td style="text-align:left">#define directive for calling <strong>Unity Analytics</strong>  methods from your game code. Version 5.2 and above.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_ASSERTIONS</strong></td>
+<td style="text-align:left">#define directive for assertions control process.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>UNITY_64</strong></td>
+<td style="text-align:left">#define directive for 64-bit platforms.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">using UnityEngine;</span><br><span class="line">using System.Collections;</span><br><span class="line"></span><br><span class="line">public class PlatformDefines : MonoBehaviour &#123;</span><br><span class="line">  void Start () &#123;</span><br><span class="line">    #if UNITY_EDITOR</span><br><span class="line">        Debug.Log(&quot;Unity Editor&quot;);</span><br><span class="line">    #endif</span><br><span class="line">    </span><br><span class="line">    #if UNITY_IOS</span><br><span class="line">        Debug.Log(&quot;Iphone&quot;);</span><br><span class="line">    #endif</span><br><span class="line"></span><br><span class="line">    #if UNITY_STANDALONE_WIN</span><br><span class="line">     	Debug.Log(&quot;Stand Alone Windows&quot;);</span><br><span class="line">    #endif</span><br><span class="line">        </span><br><span class="line">	#if UNITY_EDITOR</span><br><span class="line">		Debug.Log(&quot;Unity Editor&quot;);</span><br><span class="line">	#elif UNITY_IOS</span><br><span class="line">		Debug.Log(&quot;Unity iPhone&quot;);</span><br><span class="line">	#else</span><br><span class="line">		Debug.Log(&quot;Any other platform&quot;);</span><br><span class="line">	#endif   </span><br><span class="line">  &#125;          </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>更多，请详阅：</p>
+<blockquote>
+<p><a href="https://docs.unity3d.com/Manual/PlatformDependentCompilation.html" target="_blank" rel="noopener">https://docs.unity3d.com/Manual/PlatformDependentCompilation.html</a></p>
+</blockquote>
+
+    </div>
+    
+    <div class="post-footer">
+        <div>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+<div class="article-nav prev-next-wrap clearfix">
+    
+    
+    <a href="/2020/10/21/University-Days/" class="next-post btn btn-default" title="University_Days">
+        <span class="hidden-lg">下一篇</span>
+        <span class="hidden-xs">
+            University_Days</span><i class="fa fa-angle-right fa-fw"></i>
+    </a>
+    
+</div>
+
+<div id="comments">
+    
+
+<div id="vcomments" class="valine"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/assets/valine.min.js"></script>
+<script>
+new Valine({
+    av: AV,
+    el: '#vcomments',
+    appId: 'xOKV9J4UeQAtVkvnJC7Kq2Jn-gzGzoHsz',
+    appKey: 'erIpQac4azoCmgfBB7Dl9maa',
+    placeholder: '说点什么吧',
+    notify: false,
+    verify: true,
+    avatar: 'mm',
+    meta: 'nick,mail'.split(','),
+    pageSize: '10',
+    path: window.location.pathname,
+    lang: 'zh-CN'.toLowerCase()
+})
+</script>
+
+
+</div>
+
+                </main>
+                
+                    <aside id="article-toc" role="navigation" class="col-md-4">
+    <div class="widget">
+        <h3 class="title">
+            文章目录
+        </h3>
+        
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Unity常用多平台宏定义"><span class="toc-text">Unity常用多平台宏定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用示例"><span class="toc-text">使用示例</span></a></li></ol></li></ol>
+        
+    </div>
+</aside>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+<a id="back-to-top" class="icon-btn hide">
+    <i class="fa fa-chevron-up"></i>
+</a>
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="busuanzi">
+    
+</div>
+            </div>
+            <div class="col-sm-12">
+                <span>Copyright &copy;
+                    2019
+                    
+                </span> |
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> |
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/app.js?rev=@@hash"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});</script></body>
+</html>
