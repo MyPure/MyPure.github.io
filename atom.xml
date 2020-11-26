@@ -100,15 +100,18 @@
     <link href="http://yoursite.com/2019/09/09/Unity-Plug-ins/"/>
     <id>http://yoursite.com/2019/09/09/Unity-Plug-ins/</id>
     <published>2019-09-09T11:22:58.000Z</published>
-    <updated>2020-10-28T04:45:55.027Z</updated>
+    <updated>2020-11-26T14:37:40.699Z</updated>
     
-    <content type="html"><![CDATA[<p>Behavior Designer 用于写AI<br>DoTween 用于补间<br>PT</p>]]></content>
+    <content type="html"><![CDATA[<p>Behavior Designer 用于写AI </p><p>DoTween 用于补间 </p><p>PT</p><p>Default Playable 用于给Timeline添加更多类型的轨道</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Behavior Designer 用于写AI&lt;br&gt;DoTween 用于补间&lt;br&gt;PT&lt;/p&gt;
+        &lt;p&gt;Behavior Designer 用于写AI &lt;/p&gt;
+&lt;p&gt;DoTween 用于补间 &lt;/p&gt;
+&lt;p&gt;PT&lt;/p&gt;
+&lt;p&gt;Default Playable 用于给Timeline添加更多类型的轨道&lt;/p&gt;
 
       
     
@@ -155,7 +158,7 @@ Equals();比较//string变
     <published>2019-04-12T15:44:02.000Z</published>
     <updated>2020-09-14T15:11:59.337Z</updated>
     
-    <content type="html"><![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="请输入密码查看文章" />    <label for="pass">请输入密码查看文章</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1/AdR+/MYBQFGxb/fL0SqT6dGxAzRN46RjjOwcDtzus36OY6guYN7Pg6TxrUTOoeszg+FlLQmZ1pXw0OIulZNQkED6HpA3PvEo3atXyF0mZbjiU1EiFuW0eX4DsbxRIUqkmKazUMQu/v+7AocwhBBwEDnZNmEt6MgNHQOV0bhcJJRhCv0LiOO+9spyOcgmtUnTCkiIVB7zDLsMIliTjCgSF4g15noARacPh8cXZnChTC1tYzSvN5FSs8Ym+IU7s4yut84JBh4XvKWKgbtAtGTKQ+xrNZi0t3MX/85KCjunvvAUrN03SDHrDq4U8eIC8m/Cm9z5/NXp+CYJ5fJqBQnHhFgsU+hiUNj3oq74GfT7Sp5k5beYxMYOYp/9Cxe8w3pPIzkUuvqTPM07I3bwm1P5lbDsSO03aCu1UzeF4Hogt01ySqnEEfUbiZjQlNyXqBPcjvpANi/tAO3PsrYyHuWJaNq8uyogLlHXtj/8kBS/DEujav1g7Y9z4cKqJqyiWmFq4LRTeRCMXOimqC16J0IBdSxkyU4cq0wQnOxExZkC4XOoNQKcgFuP9TnKVHTyXl4eu660clNi5gANXjwaW22o2zBfU0IhI5qdVgwQQyQVZ0MX3eaFyId3RCAcXNujopv9nkvC62lmtuo8ZH9gi4BEzMlRnb9LYmJoeIws10jylrolUUSPYUabHUGw0gvVHz2GOV2vyjUui8ozVbJmBmAjfHJ9EkYE284n5LOpH2IDg+hsjctf5n8gfEiGq+Avu6GGlo5y2ZNl1ZEE0gTG9fpMj3KriHnPEBbwn22Tb/B5A+ouU+4GNh/scPoG7sqZtyNpZsP2ohpQGml3O1mwVgWZ9LHGZXcoOEvyBKeyLs0PZ+/GxZ6W6hyM2kpWcBZxC6d3DBW1coGrFzQ==</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    <content type="html"><![CDATA[<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><div id="hbe-security">  <div class="hbe-input-container">  <input type="password" class="hbe-form-control" id="pass" placeholder="请输入密码查看文章" />    <label for="pass">请输入密码查看文章</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19TwA2mtbJwuoRt2qKaWqlfCw5BLLQTLv9gMPB3y4P/C8cvYKxCu/GC4uZCT06zFDUNUhNMViWGofFz6f5NDl8vefTRM+Ddt3XGtq6L61wDBkllcicL2tRFkQB/fymPEYPTpa2aybHJXXLAeklhf74Uc2a3m/19RDTqSVckEqFk5uft726z3TdS2NenRkeldyPm2Uj4NlbyEJRBF80VxbydGBanCywdF7IUoZaZoEWNwuthoBKbfCUIN9fpglywNYQCy56vJw1hEkWHkQGr016KPqmGHPWo380tLG5Qm4APIVWGG+Kcdg1ayYV1YjzrJOXUyEpI9zNd7plia1CabPvm1AQZhZ0wZo5Zcz7UB5r2e2zkCxxNntxvf6OWnDAuXPN+EAZthIa9iiyeH9zaI+9fIoxiqnYD1vJKG/uHEOX2C8Cf0qJfCPbgnPri7tlBPay+vPq3das4XegwZr47ERLDBmi3e1ffdysxhOnIjkcuTyeRXWW2sRybOHyzZEcdWfCGAOqEt0HGzgn/XHY4qPHwjJ5SxP15pBkNNgQ9llUMC0/C+2hthyeLV7fQ47HPj/WM/7N6JW/lNsGlMGPJZ7jF7cL14+QiaqxQr4HsuIWr0ecUiwSMufLS6ixBIB1mXS+pMx89G61sKAyjftF/ep/yaz1xjHR5HWCTRb/Ri2WjXiB45ZbM7E9B/yqqX3BKNGF9Xf6oD3HxylAt5/6V+4eOgjKQvVfdIa8aNl7/mMbgXn0i9a1NfQpDY6Ct/rQniP1sNfQy740dMGt9tkA2kPwF8zXNqlmpcwZC2pbX1a8Dw5V6NuUAcXir6WXFQjzt289+BbFnalfETw3RmMu6ZNg7J1f0eg6LL1RUQkUVLl0Rhqm31br3WVmPVBuJHwfJB9Iky46eT7xU1A==</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
     
     <summary type="html">
     
