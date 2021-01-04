@@ -184,7 +184,7 @@
 <p>设置好引用后，开始场景，可以看到无论CanvasScaler的Match值设置成什么，都可以正常拖拽。</p>
 <img src="/2021/01/04/About-CanvasScaler/1.gif">  
 <p>如果没有经过缩放因子的修正，效果是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rectTransform.anchoredPosition = eventData.position / ScaleFactor;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rectTransform.anchoredPosition = eventData.position;</span><br></pre></td></tr></table></figure>
 <img src="/2021/01/04/About-CanvasScaler/2.gif">  
 <p>后半段展示了关掉CanvasScaler的效果，实际上这个时候屏幕坐标就和画布坐标一一对应了。</p>
 
