@@ -19,21 +19,10 @@
     <link rel="dns-prefetch" href="http://yoursite.com">
     <!--SEO-->
 
-<meta name="keywords" content>
+<meta name="keywords" content="Unity">
 
 
-<meta name="description" content="
-
-  
-  
-    请输入密码查看文章
-    
-  
-
-Incorrect Password!
-No content to display!
-
-U2FsdGVkX1/JAgqox/eq98...">
+<meta name="description" content="Unity 有关CanvasScaler缩放后的RectTransform坐标和屏幕坐标问题有的时候，我们希望通过直接设置RectTransform的值来进行UI的调整（例如anchoredPo...">
 
 
 <meta name="robots" content="all">
@@ -44,7 +33,7 @@ U2FsdGVkX1/JAgqox/eq98...">
 
 <title>
     
-    Hi |
+    Unity 有关CanvasScaler缩放后的RectTransform坐标和屏幕坐标问题 |
     
     MyPure&#39;s Blog Station
 </title>
@@ -145,22 +134,24 @@ U2FsdGVkX1/JAgqox/eq98...">
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="Hi">
+        <h1 id="Unity 有关CanvasScaler缩放后的RectTransform坐标和屏幕坐标问题">
             
-            Hi
+            Unity 有关CanvasScaler缩放后的RectTransform坐标和屏幕坐标问题
             
         </h1>
         <div class="post-meta">
     
     <span class="categories-meta fa-wrap">
         <i class="fa fa-folder-open-o"></i>
-        
+        <a class="category-link" href="/categories/Unity/">Unity</a>
     </span>
     
     
     <span class="fa-wrap">
         <i class="fa fa-tags"></i>
         <span class="tags-meta">
+            
+            <a class="tag-link" href="/tags/Unity/">Unity</a>
             
         </span>
     </span>
@@ -170,7 +161,7 @@ U2FsdGVkX1/JAgqox/eq98...">
     <span class="fa-wrap">
         <i class="fa fa-clock-o"></i>
         <span class="date-meta">
-            2019/04/12</span>
+            2021/01/04</span>
     </span>
     
     
@@ -180,20 +171,23 @@ U2FsdGVkX1/JAgqox/eq98...">
     </div>
     
     <div class="post-body post-content">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<div id="hbe-security">
-  <div class="hbe-input-container">
-  <input type="password" class="hbe-form-control" id="pass" placeholder="请输入密码查看文章">
-    <label for="pass">请输入密码查看文章</label>
-    <div class="bottom-line"></div>
-  </div>
-</div>
-<div id="decryptionError" style="display: none;">Incorrect Password!</div>
-<div id="noContentError" style="display: none;">No content to display!</div>
-<div id="encrypt-blog" style="display:none">
-U2FsdGVkX1/JAgqox/eq98XawAohHONM8JLT1OOR5U+vtSL82cf1SMip3PsS0K9qje7o+bSKmcDSEv7dhscoAv95pNyr/3woYbsHbBBfYtvY3B2PoQ+XpoSC8OzHkdWrwLTiMG/7IYNnIB2GpTBBY97KFPfRqo2bWnRdDUY7K34LHTzrePCUzxcnL7HFiVhv/nEiTLlflHnA9wUn2XUn8GIjv9d5w0K3MGQmOtWZfZt/N9eIDgJziXc7toJtKaOixHk5hDAMFS2M67VOOvJuQvXb+FX92YWyrCDCvOnhlRxbdCcl8ntlarJpjqKpwC8CldomitYW8uTFLQgs+HHdKsUDaBxJ4KS/ont0MaS/ZtZ6mBw/jILxQ+9K2/m8N4woGucfsz+5BQ7PIVvFDQHTuRzrYrL5ipDd8Ohya0xeq1FYHmbcIn2Wny/xZxzH97qQm9vcNJVaFHS85UIKkmM4MbU7Sjo4TgvR3XhWfBW2cThu3SgMU9x58CuEnHzqiiFs2jkP4x+DGKHILrok/sExXWWOgBnhsfQmBndpmgZq+HwZ+D7QpbGomlniw0n/rsqeLGSvfryXVwDOSTE04b9HjSnYVTrFDkNUsueBmTg6Mq4PQnbbbFoekwsBCygfWXhgDlwuhWz3ZQuummZHGXmkm8hZRyhLSn9eDdpJ3vmI/w+pOAIXUzgAdLenh5ZpESpwA3AIHGpkOc4GzkAEAD40hX9JzkmvERaYa0g/qtgUfSbw7MqAEk96Z71gvSnEeTvdWml4ufWT5BRivqGjECgJ+hl2wGoDPRQ7UjTjIovViE76Lln6cPESLhkJoucIqz2tCoIApi8ZjlvxXo76DiSX0TpVkYS6VsX/Za7kqd0hjL7NiTNa4mMAQwTAmF/LJindyxLFAnXPrjMUAOq2kz8gPw==
-</div>
-<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+        <h1 id="Unity-有关CanvasScaler缩放后的RectTransform坐标和屏幕坐标问题"><a href="#Unity-有关CanvasScaler缩放后的RectTransform坐标和屏幕坐标问题" class="headerlink" title="Unity 有关CanvasScaler缩放后的RectTransform坐标和屏幕坐标问题"></a>Unity 有关CanvasScaler缩放后的RectTransform坐标和屏幕坐标问题</h1><p>有的时候，我们希望通过直接设置RectTransform的值来进行UI的调整（例如anchoredPosition），但是由于CanvasScaler的缩放，屏幕坐标和Canvas内的坐标存在一个缩放关系。当想直接设置时，需要弄清楚CanvasScaler的缩放原理，找到坐标之间的对应关系。</p>
+<p>有关CanvasScaler的介绍，可以参阅官方文档：</p>
+<blockquote>
+<p><a href="https://docs.unity.cn/cn/2019.4/Manual/script-CanvasScaler.html" target="_blank" rel="noopener">https://docs.unity.cn/cn/2019.4/Manual/script-CanvasScaler.html</a></p>
+</blockquote>
+<p>对于CanvasScaler的理解，可以认为：CanvasScaler的缩放是UI物体不变，画布的大小在变化（实际上也是这样，在缩小屏幕后，Canvas的RectTransform.rect会变大）。CanvasScaler的Match Width Or Height模式中，画布是根据当前屏幕大小和Reference Resolution设置的值进行比较，根据Match中的值来计算实际缩放因子。缩放因子可以通过如下代码计算：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">float ScaleFactor =&gt; Screen.width / canvasScaler.referenceResolution.x * (1 - canvasScaler.matchWidthOrHeight) + Screen.height / canvasScaler.referenceResolution.y * canvasScaler.matchWidthOrHeight;</span><br></pre></td></tr></table></figure></p>
+<p>含义是：Canvas内的UI被缩放成原来的UI乘以ScaleFactor的大小。<br>那么，当我们想通过anchoredPosition设置UI的值时，就需要将屏幕坐标除以ScalerFactor，就能计算出UI在画布内的实际坐标。<br>测试场景：<br>创建Canvas，将CanvasScaler的ScreenMatchMode设置为MatchWidthOrHeight。<br><img src="/2021/01/04/About-CanvasScaler/1.png"> </p>
+<p>创建Image，设置RectTransform为锚点模式，并且将锚点设置在左下角。（为了直观与屏幕坐标对应，屏幕坐标的左下角为(0,0)）<br><img src="/2021/01/04/About-CanvasScaler/2.png">  </p>
+<p>为Image创建脚本，完整代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">using UnityEngine;</span><br><span class="line">using UnityEngine.UI;</span><br><span class="line">using UnityEngine.EventSystems;</span><br><span class="line"></span><br><span class="line">public class UIDragger : MonoBehaviour,IDragHandler</span><br><span class="line">&#123;</span><br><span class="line">    public Canvas canvas;</span><br><span class="line">    public CanvasScaler canvasScaler;</span><br><span class="line">    public RectTransform rectTransform;//Image的RectTransform</span><br><span class="line">    private float ScaleFactor =&gt; Screen.width / canvasScaler.referenceResolution.x * (1 - canvasScaler.matchWidthOrHeight) + Screen.height / canvasScaler.referenceResolution.y * canvasScaler.matchWidthOrHeight;</span><br><span class="line"></span><br><span class="line">    public void OnDrag(PointerEventData eventData)</span><br><span class="line">    &#123;</span><br><span class="line">        rectTransform.anchoredPosition = eventData.position / ScaleFactor;   </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>设置好引用后，开始场景，可以看到无论CanvasScaler的Match值设置成什么，都可以正常拖拽。</p>
+<img src="/2021/01/04/About-CanvasScaler/1.gif">  
+<p>如果没有经过缩放因子的修正，效果是这样的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rectTransform.anchoredPosition = eventData.position / ScaleFactor;</span><br></pre></td></tr></table></figure>
+<img src="/2021/01/04/About-CanvasScaler/2.gif">  
+<p>后半段展示了关掉CanvasScaler的效果，实际上这个时候屏幕坐标就和画布坐标一一对应了。</p>
+
     </div>
     
     <div class="post-footer">
@@ -207,17 +201,11 @@ U2FsdGVkX1/JAgqox/eq98XawAohHONM8JLT1OOR5U+vtSL82cf1SMip3PsS0K9qje7o+bSKmcDSEv7d
 </article>
 <div class="article-nav prev-next-wrap clearfix">
     
-    <a href="/2019/05/06/CSharp-Note/" class="pre-post btn btn-default" title="C#笔记">
-        <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-        <span class="hidden-xs">
-            C#笔记</span>
-    </a>
     
-    
-    <a href="/2019/04/12/linuxcommand/" class="next-post btn btn-default" title="Linux命令大全">
+    <a href="/2020/11/19/PlatformDependentCompilation/" class="next-post btn btn-default" title="Untiy 多平台宏定义">
         <span class="hidden-lg">下一篇</span>
         <span class="hidden-xs">
-            Linux命令大全</span><i class="fa fa-angle-right fa-fw"></i>
+            Untiy 多平台宏定义</span><i class="fa fa-angle-right fa-fw"></i>
     </a>
     
 </div>
@@ -256,7 +244,7 @@ new Valine({
             文章目录
         </h3>
         
-        <p>暂无目录</p>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Unity-有关CanvasScaler缩放后的RectTransform坐标和屏幕坐标问题"><span class="toc-text">Unity 有关CanvasScaler缩放后的RectTransform坐标和屏幕坐标问题</span></a></li></ol>
         
     </div>
 </aside>
