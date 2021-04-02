@@ -178,7 +178,7 @@
 <p>若<code>k1&lt;k2</code>为<code>false</code>且<code>k2&lt;k1</code>为<code>false</code>，称<code>k1</code>和<code>k2</code>等价，若<code>k1</code>和<code>k2</code>等价，<code>k2</code>和<code>k3</code>等价，则<code>k1</code>和<code>k3</code>等价。</p>
 <h2 id="为什么要满足这个性质"><a href="#为什么要满足这个性质" class="headerlink" title="为什么要满足这个性质"></a>为什么要满足这个性质</h2><p>提供自定义的函数比较大小的时候，只需要提供一个判断便能得出两个变量的大小关系。而条件就是比较大小的运算符满足了“严格弱序”。</p>
 <p>举个例子，数值比较的<code>&lt;</code>运算符就满足这个性质，而<code>&lt;=</code>不满足。当判断两个数值变量<code>i1</code>，<code>i2</code>是否相等时，是这样判断的：</p>
-<p><code>!(i1&lt;i2 &amp;&amp; i2&lt;i1)</code>两个数字都不“严格弱序”于对方，相等。</p>
+<p><code>!(i1&lt;i2) &amp;&amp; !(i2&lt;i1)</code>两个数字都不“严格弱序”于对方，相等。</p>
 <p>如果把<code>&lt;</code>换成<code>&lt;=</code>，则会出现错误。因此，有序容器中的关键字类型比较需要满足“严格弱序”。</p>
 <blockquote>
 <p>C++ Primer P378</p>
